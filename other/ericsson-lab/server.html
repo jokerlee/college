@@ -1,0 +1,35 @@
+﻿<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Warp Messaging Application Server</title>
+<script type="text/javascript"
+        src="http://ergo.labs.ericsson.net:8080/TunnelView/loader/wheelbox-loader.js">
+</script>
+<script type="text/javascript" src="server.js"></script>
+</head>
+
+<div style="margin-top:20px;margin-bottom:20px">
+  <p align="center"><font size="6" face="Arial Black" color="#008800"><b>BUPT BusOnline Server</b></font></p>
+
+</div>
+
+
+<div id="messages"></div>
+<body bgcolor="#F0FFF0">
+  <table border="0" align="center" style="margin-top:20">
+
+      <tr>
+          <td colspan="2">
+            URI:
+            <input type="text" style="width: 500" id="statusField" value="" readonly="1"/>
+          </td>
+          <td><button onclick="connection.open()">start</button></td>
+          <td><button onclick="connection.close()">stop</button></td>
+      </tr>
+  </table>
+
+  <table id="info" border="0" align="center" style="margin-top:20">
+  </table>
+</body>
+</html>

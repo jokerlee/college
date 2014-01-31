@@ -1,0 +1,256 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+CmdInterface	cmd_interface.h	/^class CmdInterface$/;"	c
+CmdInterface::edit_menu	cmd_interface.cpp	/^CmdInterface::edit_menu(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+CmdInterface::edit_menu	cmd_interface.h	/^    static void edit_menu(PhoneBook &);$/;"	p	class:CmdInterface	access:public	signature:(PhoneBook &)
+CmdInterface::file	cmd_interface.h	/^    FileIO file;$/;"	m	class:CmdInterface	access:private
+CmdInterface::getCommand	cmd_interface.cpp	/^CmdInterface::getCommand()$/;"	f	class:CmdInterface	signature:()
+CmdInterface::getCommand	cmd_interface.h	/^    char getCommand();$/;"	p	class:CmdInterface	access:private	signature:()
+CmdInterface::getConfirmed	cmd_interface.cpp	/^CmdInterface::getConfirmed()$/;"	f	class:CmdInterface	signature:()
+CmdInterface::getConfirmed	cmd_interface.h	/^    bool getConfirmed();$/;"	p	class:CmdInterface	access:private	signature:()
+CmdInterface::getLine	cmd_interface.cpp	/^CmdInterface::getLine()$/;"	f	class:CmdInterface	signature:()
+CmdInterface::getLine	cmd_interface.h	/^    string getLine();$/;"	p	class:CmdInterface	access:private	signature:()
+CmdInterface::getNumber	cmd_interface.cpp	/^CmdInterface::getNumber()$/;"	f	class:CmdInterface	signature:()
+CmdInterface::getNumber	cmd_interface.h	/^    long getNumber();$/;"	p	class:CmdInterface	access:private	signature:()
+CmdInterface::inctrl	cmd_interface.h	/^    InputControl inctrl;$/;"	m	class:CmdInterface	access:private
+CmdInterface::main_menu	cmd_interface.cpp	/^CmdInterface::main_menu()$/;"	f	class:CmdInterface	signature:()
+CmdInterface::main_menu	cmd_interface.h	/^    static void main_menu();$/;"	p	class:CmdInterface	access:public	signature:()
+CmdInterface::onAddRecord	cmd_interface.cpp	/^CmdInterface::onAddRecord(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+CmdInterface::onAddRecord	cmd_interface.h	/^    void onAddRecord(PhoneBook &);$/;"	p	class:CmdInterface	access:private	signature:(PhoneBook &)
+CmdInterface::onDelRecord	cmd_interface.cpp	/^CmdInterface::onDelRecord(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+CmdInterface::onDelRecord	cmd_interface.h	/^    void onDelRecord(PhoneBook &);$/;"	p	class:CmdInterface	access:private	signature:(PhoneBook &)
+CmdInterface::onEditRecord	cmd_interface.cpp	/^CmdInterface::onEditRecord(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+CmdInterface::onEditRecord	cmd_interface.h	/^    void onEditRecord(PhoneBook &);$/;"	p	class:CmdInterface	access:private	signature:(PhoneBook &)
+CmdInterface::onSearchRecord	cmd_interface.cpp	/^CmdInterface::onSearchRecord(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+CmdInterface::onSearchRecord	cmd_interface.h	/^    void onSearchRecord(PhoneBook &);$/;"	p	class:CmdInterface	access:private	signature:(PhoneBook &)
+CmdInterface::pause	cmd_interface.cpp	/^CmdInterface::pause()$/;"	f	class:CmdInterface	signature:()
+CmdInterface::pause	cmd_interface.h	/^    void pause();$/;"	p	class:CmdInterface	access:public	signature:()
+CmdInterface::println	cmd_interface.cpp	/^CmdInterface::println(const string & str)$/;"	f	class:CmdInterface	signature:(const string & str)
+CmdInterface::println	cmd_interface.h	/^    static void println(const string &);$/;"	p	class:CmdInterface	access:public	signature:(const string &)
+CmdInterface::run	cmd_interface.cpp	/^CmdInterface::run(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+CmdInterface::run	cmd_interface.h	/^    void run(PhoneBook &);$/;"	p	class:CmdInterface	access:public	signature:(PhoneBook &)
+CmdInterface::search_menu	cmd_interface.cpp	/^CmdInterface::search_menu(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+CmdInterface::search_menu	cmd_interface.h	/^    static void search_menu(PhoneBook &);$/;"	p	class:CmdInterface	access:public	signature:(PhoneBook &)
+CmdInterface::separator	cmd_interface.cpp	/^CmdInterface::separator()$/;"	f	class:CmdInterface	signature:()
+CmdInterface::separator	cmd_interface.h	/^    static void separator();$/;"	p	class:CmdInterface	access:public	signature:()
+CmdInterface::show	cmd_interface.cpp	/^CmdInterface::show(const PhoneBook & pb)const$/;"	f	class:CmdInterface	signature:(const PhoneBook & pb) const
+CmdInterface::show	cmd_interface.cpp	/^CmdInterface::show(const Record & rec, const vector<string> & lbls)const$/;"	f	class:CmdInterface	signature:(const Record & rec, const vector<string> & lbls) const
+CmdInterface::show	cmd_interface.cpp	/^CmdInterface::show(const RecordList & lst, const vector<string> & lbls)const$/;"	f	class:CmdInterface	signature:(const RecordList & lst, const vector<string> & lbls) const
+CmdInterface::show	cmd_interface.h	/^    void show(const PhoneBook &)const ;$/;"	p	class:CmdInterface	access:public	signature:(const PhoneBook &) const
+CmdInterface::show	cmd_interface.h	/^    void show(const Record &, const vector<string> &)const;$/;"	p	class:CmdInterface	access:public	signature:(const Record &, const vector<string> &) const
+CmdInterface::show	cmd_interface.h	/^    void show(const RecordList &, const vector<string> &)const;$/;"	p	class:CmdInterface	access:public	signature:(const RecordList &, const vector<string> &) const
+CmdInterface::show_fields	cmd_interface.cpp	/^CmdInterface::show_fields(const PhoneBook & pb)const$/;"	f	class:CmdInterface	signature:(const PhoneBook & pb) const
+CmdInterface::show_fields	cmd_interface.h	/^    void show_fields(const PhoneBook &)const;$/;"	p	class:CmdInterface	access:public	signature:(const PhoneBook &) const
+DEFINE_SINGLETON	my_utils.h	24;"	d
+DEFINE_UNCOPYABLE	my_utils.h	14;"	d
+FieldMap	book.h	/^typedef map<string, string> FieldMap;$/;"	t
+FileException	fileio.cpp	/^FileException::FileException(const string & info)$/;"	f	class:FileException	signature:(const string & info)
+FileException	fileio.h	/^    FileException(const string & name);$/;"	p	class:FileException	access:public	signature:(const string & name)
+FileException	fileio.h	/^class FileException$/;"	c
+FileException::FileException	fileio.cpp	/^FileException::FileException(const string & info)$/;"	f	class:FileException	signature:(const string & info)
+FileException::FileException	fileio.h	/^    FileException(const string & name);$/;"	p	class:FileException	access:public	signature:(const string & name)
+FileException::_filename	fileio.h	/^    string _filename;$/;"	m	class:FileException	access:private
+FileException::what	fileio.cpp	/^FileException::what()const$/;"	f	class:FileException	signature:() const
+FileException::what	fileio.h	/^    string what()const;$/;"	p	class:FileException	access:public	signature:() const
+FileIO	fileio.h	/^class FileIO$/;"	c
+FileIO::read	fileio.cpp	/^FileIO::read(PhoneBook & pb)$/;"	f	class:FileIO	signature:(PhoneBook & pb)
+FileIO::read	fileio.h	/^    void read(PhoneBook & pb);$/;"	p	class:FileIO	access:public	signature:(PhoneBook & pb)
+FileIO::store	fileio.cpp	/^FileIO::store(const PhoneBook & pb)$/;"	f	class:FileIO	signature:(const PhoneBook & pb)
+FileIO::store	fileio.h	/^    void store(const PhoneBook & pb);$/;"	p	class:FileIO	access:public	signature:(const PhoneBook & pb)
+IMPLEMENT_SINGLETON	my_utils.h	33;"	d
+InputControl	input_control.h	/^class InputControl$/;"	c
+InputControl::isCommand	input_control.cpp	/^InputControl::isCommand(const string & str)$/;"	f	class:InputControl	signature:(const string & str)
+InputControl::isCommand	input_control.h	/^	bool isCommand(const string &);$/;"	p	class:InputControl	access:public	signature:(const string &)
+InputControl::isValidNumber	input_control.cpp	/^InputControl::isValidNumber(const char ch)$/;"	f	class:InputControl	signature:(const char ch)
+InputControl::isValidNumber	input_control.cpp	/^InputControl::isValidNumber(const string & str)$/;"	f	class:InputControl	signature:(const string & str)
+InputControl::isValidNumber	input_control.h	/^    bool isValidNumber(const char);$/;"	p	class:InputControl	access:public	signature:(const char)
+InputControl::isValidNumber	input_control.h	/^    bool isValidNumber(const string &);$/;"	p	class:InputControl	access:public	signature:(const string &)
+InputControl::string_to_long	input_control.cpp	/^InputControl::string_to_long(const string & str)$/;"	f	class:InputControl	signature:(const string & str)
+InputControl::string_to_long	input_control.h	/^	long string_to_long(const string &);$/;"	p	class:InputControl	access:public	signature:(const string &)
+ListIter	book.h	/^typedef RecordList::iterator ListIter;$/;"	t
+MapIter	book.h	/^typedef FieldMap::iterator MapIter;$/;"	t
+MapType	book.h	/^typedef map<string, string>::value_type MapType;$/;"	t
+PhoneBook	book.cpp	/^PhoneBook::PhoneBook(vector<string> labels)$/;"	f	class:PhoneBook	signature:(vector<string> labels)
+PhoneBook	book.h	/^    PhoneBook(vector<string>);$/;"	p	class:PhoneBook	access:public	signature:(vector<string>)
+PhoneBook	book.h	/^class PhoneBook$/;"	c
+PhoneBook::PhoneBook	book.cpp	/^PhoneBook::PhoneBook(vector<string> labels)$/;"	f	class:PhoneBook	signature:(vector<string> labels)
+PhoneBook::PhoneBook	book.h	/^    PhoneBook(vector<string>);$/;"	p	class:PhoneBook	access:public	signature:(vector<string>)
+PhoneBook::_labels	book.h	/^    vector<string> _labels;$/;"	m	class:PhoneBook	access:private
+PhoneBook::_records	book.h	/^    RecordList _records;$/;"	m	class:PhoneBook	access:protected
+PhoneBook::addRecord	book.cpp	/^PhoneBook::addRecord(Record & r)$/;"	f	class:PhoneBook	signature:(Record & r)
+PhoneBook::addRecord	book.h	/^    void addRecord(Record &);$/;"	p	class:PhoneBook	access:public	signature:(Record &)
+PhoneBook::delRecord	book.cpp	/^PhoneBook::delRecord(const long index)$/;"	f	class:PhoneBook	signature:(const long index)
+PhoneBook::delRecord	book.h	/^    void delRecord(const long);$/;"	p	class:PhoneBook	access:public	signature:(const long)
+PhoneBook::field	book.h	/^    const string field(long n)const { return _labels[n]; }$/;"	f	class:PhoneBook	access:public	signature:(long n) const
+PhoneBook::fields	book.h	/^    vector<string> fields()const { return _labels; }$/;"	f	class:PhoneBook	access:public	signature:() const
+PhoneBook::max_index	book.cpp	/^long PhoneBook::max_index = 1;$/;"	m	class:PhoneBook	file:
+PhoneBook::max_index	book.h	/^    static long max_index;$/;"	m	class:PhoneBook	access:private
+PhoneBook::recSize	book.h	/^    long recSize()const { return _labels.size(); }$/;"	f	class:PhoneBook	access:public	signature:() const
+PhoneBook::refreshIndex	book.cpp	/^PhoneBook::refreshIndex()$/;"	f	class:PhoneBook	signature:()
+PhoneBook::refreshIndex	book.h	/^    void refreshIndex();$/;"	p	class:PhoneBook	access:private	signature:()
+PhoneBook::searchByField	book.cpp	/^PhoneBook::searchByField(const string & fd, const string & str)$/;"	f	class:PhoneBook	signature:(const string & fd, const string & str)
+PhoneBook::searchByField	book.h	/^    RecordList searchByField(const string &, const string &);$/;"	p	class:PhoneBook	access:public	signature:(const string &, const string &)
+PhoneBook::searchByIndex	book.cpp	/^PhoneBook::searchByIndex(const long index)$/;"	f	class:PhoneBook	signature:(const long index)
+PhoneBook::searchByIndex	book.h	/^    const Record & searchByIndex(long index);$/;"	p	class:PhoneBook	access:public	signature:(long index)
+PhoneBook::searchField	book.cpp	/^PhoneBook::searchField(const string & lbl, const string & str, ListIter i)$/;"	f	class:PhoneBook	signature:(const string & lbl, const string & str, ListIter i)
+PhoneBook::searchField	book.h	/^    ListIter searchField(const string &, const string &, ListIter);$/;"	p	class:PhoneBook	access:private	signature:(const string &, const string &, ListIter)
+PhoneBook::searchIndex	book.cpp	/^PhoneBook::searchIndex(const long index, ListIter i)$/;"	f	class:PhoneBook	signature:(const long index, ListIter i)
+PhoneBook::searchIndex	book.h	/^    ListIter searchIndex(const long, ListIter);$/;"	p	class:PhoneBook	access:private	signature:(const long, ListIter)
+PhoneBook::setFields	book.cpp	/^PhoneBook::setFields(vector<string> labels)$/;"	f	class:PhoneBook	signature:(vector<string> labels)
+PhoneBook::setFields	book.h	/^    void setFields(vector<string>);$/;"	p	class:PhoneBook	access:public	signature:(vector<string>)
+PhoneBook::setRecord	book.cpp	/^PhoneBook::setRecord(const long index, const Record & rec)$/;"	f	class:PhoneBook	signature:(const long index, const Record & rec)
+PhoneBook::setRecord	book.h	/^    void setRecord(const long, const Record &);$/;"	p	class:PhoneBook	access:public	signature:(const long, const Record &)
+PhoneBook::size	book.h	/^    long size()const { return _records.size(); }$/;"	f	class:PhoneBook	access:public	signature:() const
+Record	book.cpp	/^Record::Record(const PhoneBook & pb) : _index(0), _owner(0)$/;"	f	class:Record	signature:(const PhoneBook & pb)
+Record	book.cpp	/^Record::Record(string name) : _index(0), _owner(0)$/;"	f	class:Record	signature:(string name)
+Record	book.h	/^    Record(const PhoneBook &);$/;"	p	class:Record	access:public	signature:(const PhoneBook &)
+Record	book.h	/^    Record(string name="");$/;"	p	class:Record	access:public	signature:(string name=Ó)
+Record	book.h	/^class Record$/;"	c
+Record::Record	book.cpp	/^Record::Record(const PhoneBook & pb) : _index(0), _owner(0)$/;"	f	class:Record	signature:(const PhoneBook & pb)
+Record::Record	book.cpp	/^Record::Record(string name) : _index(0), _owner(0)$/;"	f	class:Record	signature:(string name)
+Record::Record	book.h	/^    Record(const PhoneBook &);$/;"	p	class:Record	access:public	signature:(const PhoneBook &)
+Record::Record	book.h	/^    Record(string name="");$/;"	p	class:Record	access:public	signature:(string name=Ó)
+Record::_data	book.h	/^    map<string, string> _data;$/;"	m	class:Record	access:private
+Record::_index	book.h	/^    long _index;$/;"	m	class:Record	access:private
+Record::_owner	book.h	/^    const PhoneBook * _owner;$/;"	m	class:Record	access:private
+Record::attach	book.h	/^    void attach(const PhoneBook & pb) { _owner = &pb; }$/;"	f	class:Record	access:public	signature:(const PhoneBook & pb)
+Record::clear	book.cpp	/^Record::clear()$/;"	f	class:Record	signature:()
+Record::clear	book.h	/^    void clear();$/;"	p	class:Record	access:public	signature:()
+Record::index	book.h	/^    const long index()const { return _index; }$/;"	f	class:Record	access:public	signature:() const
+Record::operator !=	book.cpp	/^Record::operator!=(const Record & rec)const$/;"	f	class:Record	signature:(const Record & rec) const
+Record::operator !=	book.h	/^    bool operator!=(const Record &)const;$/;"	p	class:Record	access:public	signature:(const Record &) const
+Record::operator <<	book.h	/^    friend ostream & operator<<(ostream & out, const Record & );$/;"	p	class:Record	access:friend	signature:(ostream & out, const Record & )
+Record::operator ==	book.cpp	/^Record::operator==(const Record & rec)const$/;"	f	class:Record	signature:(const Record & rec) const
+Record::operator ==	book.h	/^    bool operator==(const Record &)const;$/;"	p	class:Record	access:public	signature:(const Record &) const
+Record::operator >>	book.h	/^    friend istream & operator>>(istream & out, Record & );$/;"	p	class:Record	access:friend	signature:(istream & out, Record & )
+Record::operator []	book.cpp	/^Record::operator[](const string & field)$/;"	f	class:Record	signature:(const string & field)
+Record::operator []	book.cpp	/^Record::operator[](const string & field)const$/;"	f	class:Record	signature:(const string & field) const
+Record::operator []	book.h	/^    const string & operator[](const string &)const;$/;"	p	class:Record	access:public	signature:(const string &) const
+Record::operator []	book.h	/^    string & operator[](const string &);$/;"	p	class:Record	access:public	signature:(const string &)
+Record::operator bool	book.cpp	/^Record::operator bool()const$/;"	f	class:Record	signature:() const
+Record::operator bool	book.h	/^    operator bool()const;$/;"	p	class:Record	access:public	signature:() const
+Record::owner	book.h	/^    const PhoneBook * owner()const { return _owner; }$/;"	f	class:Record	access:public	signature:() const
+Record::setField	book.cpp	/^Record::setField(const string & name, const string & content)$/;"	f	class:Record	signature:(const string & name, const string & content)
+Record::setField	book.h	/^    void setField(const string &, const string &);$/;"	p	class:Record	access:public	signature:(const string &, const string &)
+Record::setIndex	book.h	/^    void setIndex(long index) { _index = index; }$/;"	f	class:Record	access:public	signature:(long index)
+Record::size	book.h	/^    const long size()const { return _data.size(); }$/;"	f	class:Record	access:public	signature:() const
+RecordList	book.h	/^typedef list<Record> RecordList;$/;"	t
+__BOOK_PHONEBOOK_H_INCLUDE__	book.h	2;"	d
+__CMD_INPUT_CONTROL_PHONEBOOK_H_INCLUDE__	input_control.h	2;"	d
+__CMD_INTERFACE_PHONEBOOK_H_INCLUDE__	cmd_interface.h	2;"	d
+__FILEIO_PHONEBOOK_H_INCLUDE__	fileio.h	2;"	d
+__JACKAL_DIRE_UTILS_H_INCLUDE__	my_utils.h	7;"	d
+_data	book.h	/^    map<string, string> _data;$/;"	m	class:Record	access:private
+_filename	fileio.h	/^    string _filename;$/;"	m	class:FileException	access:private
+_index	book.h	/^    long _index;$/;"	m	class:Record	access:private
+_labels	book.h	/^    vector<string> _labels;$/;"	m	class:PhoneBook	access:private
+_owner	book.h	/^    const PhoneBook * _owner;$/;"	m	class:Record	access:private
+_records	book.h	/^    RecordList _records;$/;"	m	class:PhoneBook	access:protected
+addRecord	book.cpp	/^PhoneBook::addRecord(Record & r)$/;"	f	class:PhoneBook	signature:(Record & r)
+addRecord	book.h	/^    void addRecord(Record &);$/;"	p	class:PhoneBook	access:public	signature:(Record &)
+attach	book.h	/^    void attach(const PhoneBook & pb) { _owner = &pb; }$/;"	f	class:Record	access:public	signature:(const PhoneBook & pb)
+cListIter	book.h	/^typedef RecordList::const_iterator cListIter;$/;"	t
+cMapIter	book.h	/^typedef FieldMap::const_iterator cMapIter;$/;"	t
+clear	book.cpp	/^Record::clear()$/;"	f	class:Record	signature:()
+clear	book.h	/^    void clear();$/;"	p	class:Record	access:public	signature:()
+delRecord	book.cpp	/^PhoneBook::delRecord(const long index)$/;"	f	class:PhoneBook	signature:(const long index)
+delRecord	book.h	/^    void delRecord(const long);$/;"	p	class:PhoneBook	access:public	signature:(const long)
+edit_menu	cmd_interface.cpp	/^CmdInterface::edit_menu(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+edit_menu	cmd_interface.h	/^    static void edit_menu(PhoneBook &);$/;"	p	class:CmdInterface	access:public	signature:(PhoneBook &)
+field	book.h	/^    const string field(long n)const { return _labels[n]; }$/;"	f	class:PhoneBook	access:public	signature:(long n) const
+fields	book.h	/^    vector<string> fields()const { return _labels; }$/;"	f	class:PhoneBook	access:public	signature:() const
+file	cmd_interface.h	/^    FileIO file;$/;"	m	class:CmdInterface	access:private
+getCommand	cmd_interface.cpp	/^CmdInterface::getCommand()$/;"	f	class:CmdInterface	signature:()
+getCommand	cmd_interface.h	/^    char getCommand();$/;"	p	class:CmdInterface	access:private	signature:()
+getConfirmed	cmd_interface.cpp	/^CmdInterface::getConfirmed()$/;"	f	class:CmdInterface	signature:()
+getConfirmed	cmd_interface.h	/^    bool getConfirmed();$/;"	p	class:CmdInterface	access:private	signature:()
+getLine	cmd_interface.cpp	/^CmdInterface::getLine()$/;"	f	class:CmdInterface	signature:()
+getLine	cmd_interface.h	/^    string getLine();$/;"	p	class:CmdInterface	access:private	signature:()
+getNumber	cmd_interface.cpp	/^CmdInterface::getNumber()$/;"	f	class:CmdInterface	signature:()
+getNumber	cmd_interface.h	/^    long getNumber();$/;"	p	class:CmdInterface	access:private	signature:()
+inctrl	cmd_interface.h	/^    InputControl inctrl;$/;"	m	class:CmdInterface	access:private
+index	book.h	/^    const long index()const { return _index; }$/;"	f	class:Record	access:public	signature:() const
+isCommand	input_control.cpp	/^InputControl::isCommand(const string & str)$/;"	f	class:InputControl	signature:(const string & str)
+isCommand	input_control.h	/^	bool isCommand(const string &);$/;"	p	class:InputControl	access:public	signature:(const string &)
+isValidNumber	input_control.cpp	/^InputControl::isValidNumber(const char ch)$/;"	f	class:InputControl	signature:(const char ch)
+isValidNumber	input_control.cpp	/^InputControl::isValidNumber(const string & str)$/;"	f	class:InputControl	signature:(const string & str)
+isValidNumber	input_control.h	/^    bool isValidNumber(const char);$/;"	p	class:InputControl	access:public	signature:(const char)
+isValidNumber	input_control.h	/^    bool isValidNumber(const string &);$/;"	p	class:InputControl	access:public	signature:(const string &)
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main_menu	cmd_interface.cpp	/^CmdInterface::main_menu()$/;"	f	class:CmdInterface	signature:()
+main_menu	cmd_interface.h	/^    static void main_menu();$/;"	p	class:CmdInterface	access:public	signature:()
+max_index	book.cpp	/^long PhoneBook::max_index = 1;$/;"	m	class:PhoneBook	file:
+max_index	book.h	/^    static long max_index;$/;"	m	class:PhoneBook	access:private
+onAddRecord	cmd_interface.cpp	/^CmdInterface::onAddRecord(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+onAddRecord	cmd_interface.h	/^    void onAddRecord(PhoneBook &);$/;"	p	class:CmdInterface	access:private	signature:(PhoneBook &)
+onDelRecord	cmd_interface.cpp	/^CmdInterface::onDelRecord(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+onDelRecord	cmd_interface.h	/^    void onDelRecord(PhoneBook &);$/;"	p	class:CmdInterface	access:private	signature:(PhoneBook &)
+onEditRecord	cmd_interface.cpp	/^CmdInterface::onEditRecord(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+onEditRecord	cmd_interface.h	/^    void onEditRecord(PhoneBook &);$/;"	p	class:CmdInterface	access:private	signature:(PhoneBook &)
+onSearchRecord	cmd_interface.cpp	/^CmdInterface::onSearchRecord(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+onSearchRecord	cmd_interface.h	/^    void onSearchRecord(PhoneBook &);$/;"	p	class:CmdInterface	access:private	signature:(PhoneBook &)
+operator !=	book.cpp	/^Record::operator!=(const Record & rec)const$/;"	f	class:Record	signature:(const Record & rec) const
+operator !=	book.h	/^    bool operator!=(const Record &)const;$/;"	p	class:Record	access:public	signature:(const Record &) const
+operator <<	book.cpp	/^ostream & operator<<(ostream & out, const Record & rec)$/;"	f	signature:(ostream & out, const Record & rec)
+operator <<	book.h	/^    friend ostream & operator<<(ostream & out, const Record & );$/;"	p	class:Record	access:friend	signature:(ostream & out, const Record & )
+operator ==	book.cpp	/^Record::operator==(const Record & rec)const$/;"	f	class:Record	signature:(const Record & rec) const
+operator ==	book.h	/^    bool operator==(const Record &)const;$/;"	p	class:Record	access:public	signature:(const Record &) const
+operator >>	book.cpp	/^istream & operator>>(istream & in, Record & rec)$/;"	f	signature:(istream & in, Record & rec)
+operator >>	book.h	/^    friend istream & operator>>(istream & out, Record & );$/;"	p	class:Record	access:friend	signature:(istream & out, Record & )
+operator []	book.cpp	/^Record::operator[](const string & field)$/;"	f	class:Record	signature:(const string & field)
+operator []	book.cpp	/^Record::operator[](const string & field)const$/;"	f	class:Record	signature:(const string & field) const
+operator []	book.h	/^    const string & operator[](const string &)const;$/;"	p	class:Record	access:public	signature:(const string &) const
+operator []	book.h	/^    string & operator[](const string &);$/;"	p	class:Record	access:public	signature:(const string &)
+operator bool	book.cpp	/^Record::operator bool()const$/;"	f	class:Record	signature:() const
+operator bool	book.h	/^    operator bool()const;$/;"	p	class:Record	access:public	signature:() const
+owner	book.h	/^    const PhoneBook * owner()const { return _owner; }$/;"	f	class:Record	access:public	signature:() const
+pause	cmd_interface.cpp	/^CmdInterface::pause()$/;"	f	class:CmdInterface	signature:()
+pause	cmd_interface.h	/^    void pause();$/;"	p	class:CmdInterface	access:public	signature:()
+println	cmd_interface.cpp	/^CmdInterface::println(const string & str)$/;"	f	class:CmdInterface	signature:(const string & str)
+println	cmd_interface.h	/^    static void println(const string &);$/;"	p	class:CmdInterface	access:public	signature:(const string &)
+read	fileio.cpp	/^FileIO::read(PhoneBook & pb)$/;"	f	class:FileIO	signature:(PhoneBook & pb)
+read	fileio.h	/^    void read(PhoneBook & pb);$/;"	p	class:FileIO	access:public	signature:(PhoneBook & pb)
+recSize	book.h	/^    long recSize()const { return _labels.size(); }$/;"	f	class:PhoneBook	access:public	signature:() const
+refreshIndex	book.cpp	/^PhoneBook::refreshIndex()$/;"	f	class:PhoneBook	signature:()
+refreshIndex	book.h	/^    void refreshIndex();$/;"	p	class:PhoneBook	access:private	signature:()
+run	cmd_interface.cpp	/^CmdInterface::run(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+run	cmd_interface.h	/^    void run(PhoneBook &);$/;"	p	class:CmdInterface	access:public	signature:(PhoneBook &)
+searchByField	book.cpp	/^PhoneBook::searchByField(const string & fd, const string & str)$/;"	f	class:PhoneBook	signature:(const string & fd, const string & str)
+searchByField	book.h	/^    RecordList searchByField(const string &, const string &);$/;"	p	class:PhoneBook	access:public	signature:(const string &, const string &)
+searchByIndex	book.cpp	/^PhoneBook::searchByIndex(const long index)$/;"	f	class:PhoneBook	signature:(const long index)
+searchByIndex	book.h	/^    const Record & searchByIndex(long index);$/;"	p	class:PhoneBook	access:public	signature:(long index)
+searchField	book.cpp	/^PhoneBook::searchField(const string & lbl, const string & str, ListIter i)$/;"	f	class:PhoneBook	signature:(const string & lbl, const string & str, ListIter i)
+searchField	book.h	/^    ListIter searchField(const string &, const string &, ListIter);$/;"	p	class:PhoneBook	access:private	signature:(const string &, const string &, ListIter)
+searchIndex	book.cpp	/^PhoneBook::searchIndex(const long index, ListIter i)$/;"	f	class:PhoneBook	signature:(const long index, ListIter i)
+searchIndex	book.h	/^    ListIter searchIndex(const long, ListIter);$/;"	p	class:PhoneBook	access:private	signature:(const long, ListIter)
+search_menu	cmd_interface.cpp	/^CmdInterface::search_menu(PhoneBook & pb)$/;"	f	class:CmdInterface	signature:(PhoneBook & pb)
+search_menu	cmd_interface.h	/^    static void search_menu(PhoneBook &);$/;"	p	class:CmdInterface	access:public	signature:(PhoneBook &)
+separator	cmd_interface.cpp	/^CmdInterface::separator()$/;"	f	class:CmdInterface	signature:()
+separator	cmd_interface.h	/^    static void separator();$/;"	p	class:CmdInterface	access:public	signature:()
+setField	book.cpp	/^Record::setField(const string & name, const string & content)$/;"	f	class:Record	signature:(const string & name, const string & content)
+setField	book.h	/^    void setField(const string &, const string &);$/;"	p	class:Record	access:public	signature:(const string &, const string &)
+setFields	book.cpp	/^PhoneBook::setFields(vector<string> labels)$/;"	f	class:PhoneBook	signature:(vector<string> labels)
+setFields	book.h	/^    void setFields(vector<string>);$/;"	p	class:PhoneBook	access:public	signature:(vector<string>)
+setIndex	book.h	/^    void setIndex(long index) { _index = index; }$/;"	f	class:Record	access:public	signature:(long index)
+setRecord	book.cpp	/^PhoneBook::setRecord(const long index, const Record & rec)$/;"	f	class:PhoneBook	signature:(const long index, const Record & rec)
+setRecord	book.h	/^    void setRecord(const long, const Record &);$/;"	p	class:PhoneBook	access:public	signature:(const long, const Record &)
+show	cmd_interface.cpp	/^CmdInterface::show(const PhoneBook & pb)const$/;"	f	class:CmdInterface	signature:(const PhoneBook & pb) const
+show	cmd_interface.cpp	/^CmdInterface::show(const Record & rec, const vector<string> & lbls)const$/;"	f	class:CmdInterface	signature:(const Record & rec, const vector<string> & lbls) const
+show	cmd_interface.cpp	/^CmdInterface::show(const RecordList & lst, const vector<string> & lbls)const$/;"	f	class:CmdInterface	signature:(const RecordList & lst, const vector<string> & lbls) const
+show	cmd_interface.h	/^    void show(const PhoneBook &)const ;$/;"	p	class:CmdInterface	access:public	signature:(const PhoneBook &) const
+show	cmd_interface.h	/^    void show(const Record &, const vector<string> &)const;$/;"	p	class:CmdInterface	access:public	signature:(const Record &, const vector<string> &) const
+show	cmd_interface.h	/^    void show(const RecordList &, const vector<string> &)const;$/;"	p	class:CmdInterface	access:public	signature:(const RecordList &, const vector<string> &) const
+show_fields	cmd_interface.cpp	/^CmdInterface::show_fields(const PhoneBook & pb)const$/;"	f	class:CmdInterface	signature:(const PhoneBook & pb) const
+show_fields	cmd_interface.h	/^    void show_fields(const PhoneBook &)const;$/;"	p	class:CmdInterface	access:public	signature:(const PhoneBook &) const
+size	book.h	/^    const long size()const { return _data.size(); }$/;"	f	class:Record	access:public	signature:() const
+size	book.h	/^    long size()const { return _records.size(); }$/;"	f	class:PhoneBook	access:public	signature:() const
+store	fileio.cpp	/^FileIO::store(const PhoneBook & pb)$/;"	f	class:FileIO	signature:(const PhoneBook & pb)
+store	fileio.h	/^    void store(const PhoneBook & pb);$/;"	p	class:FileIO	access:public	signature:(const PhoneBook & pb)
+string_to_long	input_control.cpp	/^InputControl::string_to_long(const string & str)$/;"	f	class:InputControl	signature:(const string & str)
+string_to_long	input_control.h	/^	long string_to_long(const string &);$/;"	p	class:InputControl	access:public	signature:(const string &)
+what	fileio.cpp	/^FileException::what()const$/;"	f	class:FileException	signature:() const
+what	fileio.h	/^    string what()const;$/;"	p	class:FileException	access:public	signature:() const

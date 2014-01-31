@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://byrproxys/locale/overlay.dtd">
+<overlay id="overlay_status"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="overlay.js" />
+
+    <statusbar id="status-bar">
+		<statusbarpanel id="menu-main" onclick="gByrProxy.onClickIcon();">
+			<image src="chrome://byrproxys/skin/menu.png"/>
+		</statusbarpanel>
+		<popupset>
+			<menupopup id="menu-root">
+				<menuitem label="刷新"
+                          oncommand="gByrProxy.getProxys();" />
+				<menuitem label="关闭代理"
+                          oncommand="gByrProxy.disableProxy();" />
+			</menupopup>
+		</popupset>
+	</statusbar>
+</overlay>

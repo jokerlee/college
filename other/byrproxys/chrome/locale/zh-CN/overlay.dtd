@@ -1,0 +1,12 @@
+﻿<!ENTITY byr-preferences "选项...">
+<!ENTITY byr-preferences-k "P">
+<!ENTITY byr-readall "全部标记为已读">
+<!ENTITY byr-readall-k "M">
+<!ENTITY byr-refreshnow "立即更新">
+<!ENTITY byr-refreshnow-k "R">
+<!ENTITY byr-replyhelper "回帖小助手...">
+<!ENTITY byr-replyhelper-k "H">
+<!ENTITY byr-alertnew "有新帖子啦！">
+<!ENTITY byr-alertmatch "新的包含监视关键字的帖子！">
+<!ENTITY byr-alertmatch-title "关键字匹配">
+<!ENTITY byr-closealert "我知道了">

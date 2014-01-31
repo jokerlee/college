@@ -1,0 +1,3 @@
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/ALL_BUILD.dir
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/ZERO_CHECK.dir
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/wxMedical3.dir

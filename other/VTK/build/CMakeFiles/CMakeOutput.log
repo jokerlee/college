@@ -1,0 +1,89 @@
+The system is: Windows - 5.1 - x86
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~1\MID05A~1\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+Microsoft (R) Visual Studio 8.0.50727.42 版。
+版权所有 (C) Microsoft Corp 1984-2005。保留所有权利。
+------ 已启动生成: 项目: cmTryCompileExec, 配置: Debug Win32 ------
+正在编译...
+用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 14.00.50727.42 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Fo"cmTryCompileExec.dir\Debug\\" /Fd"C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec.pdb" /W3 /c /Zi /TC   /Zm1000
+   .\testCCompiler.c
+testCCompiler.c
+正在编译资源清单...
+正在链接...
+正在嵌入清单...
+生成日志保存在“file://c:\VTK\test\wxVTK\Medical\build\CMakeFiles\CMakeTmp\cmTryCompileExec.dir\Debug\BuildLog.htm”
+cmTryCompileExec - 0 个错误，0 个警告
+========== 生成: 1 已成功, 0 已失败, 0 最新, 0 已跳过 ==========
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~1\MID05A~1\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+Microsoft (R) Visual Studio 8.0.50727.42 版。
+版权所有 (C) Microsoft Corp 1984-2005。保留所有权利。
+------ 已启动生成: 项目: cmTryCompileExec, 配置: Debug Win32 ------
+正在编译...
+用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 14.00.50727.42 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /RTC1 /MDd /Fo"cmTryCompileExec.dir\Debug\\" /Fd"C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec.pdb" /W3 /c /Zi /TC   /Zm1000
+   "..\..\..\..\..\..\..\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+CMakeCCompilerABI.c
+正在编译资源清单...
+正在链接...
+正在嵌入清单...
+生成日志保存在“file://c:\VTK\test\wxVTK\Medical\build\CMakeFiles\CMakeTmp\cmTryCompileExec.dir\Debug\BuildLog.htm”
+cmTryCompileExec - 0 个错误，0 个警告
+========== 生成: 1 已成功, 0 已失败, 0 最新, 0 已跳过 ==========
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~1\MID05A~1\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+Microsoft (R) Visual Studio 8.0.50727.42 版。
+版权所有 (C) Microsoft Corp 1984-2005。保留所有权利。
+------ 已启动生成: 项目: cmTryCompileExec, 配置: Debug Win32 ------
+正在编译...
+用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 14.00.50727.42 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /EHsc /RTC1 /MDd /Fo"cmTryCompileExec.dir\Debug\\" /Fd"C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec.pdb" /W3 /c /Zi /TP   /Zm1000
+   .\testCXXCompiler.cxx
+testCXXCompiler.cxx
+正在编译资源清单...
+正在链接...
+正在嵌入清单...
+生成日志保存在“file://c:\VTK\test\wxVTK\Medical\build\CMakeFiles\CMakeTmp\cmTryCompileExec.dir\Debug\BuildLog.htm”
+cmTryCompileExec - 0 个错误，0 个警告
+========== 生成: 1 已成功, 0 已失败, 0 最新, 0 已跳过 ==========
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~1\MID05A~1\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec
+
+Microsoft (R) Visual Studio 8.0.50727.42 版。
+版权所有 (C) Microsoft Corp 1984-2005。保留所有权利。
+------ 已启动生成: 项目: cmTryCompileExec, 配置: Debug Win32 ------
+正在编译...
+用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 14.00.50727.42 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+cl /Od /D "WIN32" /D "_WINDOWS" /D "_DEBUG" /D "CMAKE_INTDIR=\"Debug\"" /D "_MBCS" /FD /EHsc /RTC1 /MDd /Fo"cmTryCompileExec.dir\Debug\\" /Fd"C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec.pdb" /W3 /c /Zi /TP   /Zm1000
+   "..\..\..\..\..\..\..\Program Files\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+CMakeCXXCompilerABI.cpp
+正在编译资源清单...
+正在链接...
+正在嵌入清单...
+生成日志保存在“file://c:\VTK\test\wxVTK\Medical\build\CMakeFiles\CMakeTmp\cmTryCompileExec.dir\Debug\BuildLog.htm”
+cmTryCompileExec - 0 个错误，0 个警告
+========== 生成: 1 已成功, 0 已失败, 0 最新, 0 已跳过 ==========
+
+

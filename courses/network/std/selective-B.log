@@ -1,0 +1,19 @@
+./selective -b 
+=========================================================================
+                          Station B                                 
+-------------------------------------------------------------------------
+Protocol.lib, version 3.0, Build: Oct 19 2009 (jiangy@public3.bta.net.cn)
+Channel: 8000 bps, 270 ms propagation delay, bit error rate 1.0E-05
+Log file "./selective-B.log", TCP port 59144, debug mask 0x00
+Station B is connecting station A (TCP port 59144) ... Done.
+New epoch: Sun Nov 22 22:19:45 2009
+=========================================================================
+Designed by Jiang Yanjun, build: Oct 19 2009  22:45:01
+2.585 .... 8 packets received, 7692 bps, 96.15%, Err 0 (0.0e+00)
+6.000 .... 16 packets received, 5909 bps, 73.87%, Err 1 (2.2e-05)
+8.124 .... 28 packets received, 7477 bps, 93.47%, Err 1 (1.6e-05)
+10.249 .... 36 packets received, 7528 bps, 94.10%, Err 1 (1.2e-05)
+12.354 .... 44 packets received, 7574 bps, 94.67%, Err 1 (1.0e-05)
+14.472 .... 52 packets received, 7598 bps, 94.97%, Err 1 (8.8e-06)
+16.574 .... 60 packets received, 7623 bps, 95.29%, Err 1 (7.6e-06)
+18.689 .... 68 packets received, 7638 bps, 95.47%, Err 1 (6.8e-06)

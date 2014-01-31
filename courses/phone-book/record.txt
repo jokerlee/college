@@ -1,0 +1,155 @@
+Version 1
+
+Class Record
+{
+private:
+	long _index;  // unique, used as key;
+	string _name;
+	string _addr;
+	string _phone;
+	
+public:
+	//some data access methods
+	long index()const;
+	const string & name()const;
+	const string & addr()const;
+	const string & phone()const;
+}
+
+
+What container to use to store the record is much related to the efficiency of coding and the program. Choose vector or list? 
+vector has linear-time cost at insert/remove an element, random access. 
+list has constand-time cost at insert/remove an element, linear-time to locate an element
+
+if choose vector, the subcript will be the index, but most searches are in name/phone, thus random access is helpless. On the other hand, iterator and subscript don't differ much when they are used to iterate the container
+class PhoneBook
+{
+
+protected:
+    list<Record> _records; // Store all the records in a phone book
+
+public:
+	/* member functions to add/search/remove record.
+     * Seach functions such as seachByName(...), seachByPhone(...)
+     * return all the records which contains the search key; */
+     
+private:
+	/* private search methods, have a iterator argument used as start
+	 * positon, and return the iterator of the first record which 
+	 * contains the search key.*/
+    
+    // this function is reserved for future use
+    void refreshIndex();
+};
+
+
+Version 2(With command line interface)
+
+When I start to write code for the command line interface, I think the interfaces's code should completely separated from the core so that another interface(eg. graphic uer interface under MFC, gtk) could be added easily, and the difficulty of debugging would reduce.
+
+So, I designed a class named CmdInterface to handle the command line's I/O.
+
+class CmdInterface
+{
+public:	
+	// some display methods overloaded for differet types
+	void show(const Record &);
+	void show(const RecordList &);
+	void show(const PhoneBook &);
+	
+	void main_menu();
+	void edit_menu();
+	void separator();
+	void println(const string & str);
+	void pause();
+	
+private:
+	// command line interface of add/search/remove operations on phonebook
+
+private:
+	// methods used to get input from cmds
+	string getLine();
+    char getCommand();
+    long getNumber();
+    bool getConfirmed()
+	
+	// input control, see below
+	InputControl inCtrl;
+}
+
+when talking about input, an important thing is that how to verify the input is valid and what to do when an invalid input occured. This problem exsist in both CLI and GUI, so I try to design a class separate from the UI class.
+
+class InputControl
+{
+public:
+    bool isValidNumber(const char);
+    bool isValidNumber(const string &);
+	bool isCommand(const string &);
+	long string_to_long(const string &);
+}
+
+
+
+
+Version 3(With muti-fields support)
+
+As the code of class Record and class PhoneBook shows. A record field e.g. name, means a private varible Record::_name, an acess method Record::name(), an edit method PhoneBook::editName(), and two search methods PhoneBook::searchByName(), PhoneBook::searchName(). What's more, a lot of boring codes in CmdInterface. If I want to add a field to class record, I should add all the methods which other fields have although their code almost the same. So I changed the design, aimed at making it more common-use.
+
+My idea is use a STL container to store all the fields except the index(Because index is numerical, others are just strings).I choosed map becase it can be used as map["name"], map["phone"], this feature can help me quickly get the field's content by their name instead of a loop to iterate the container. I also add a string vector in class PhoneBook to mark what fields the records have in this phonebook. The fields should be determined when the PhoneBook object is constructed.
+
+In this design, all these fields share a common acess method, search method, edit method, and a commin interface, so it greatly avoided those duplicated codes and have more flexibility.
+
+For convenience, I overload the == and != operator to compare two records, and [] operator to quickly get the fields by name, an conversion to bool for uses like "if (record) {...}";
+
+class Record
+{
+
+private:
+    map<string, string> _fields;
+    long _index;
+
+public:
+    Record(string name="");
+    Record(vector<string>);
+
+    operator bool()const;
+    bool operator==(const Record &)const;
+    bool operator!=(const Record &)const;
+    string & operator[](const string &);
+    const string & operator[](const string &)const;
+
+    const long index()const { return _index; }
+    const long size()const { return _fields.size(); }
+	
+    void setIndex(long index) { _index = index; }
+    void setField(const string &, long);    
+};
+
+
+class PhoneBook
+{
+friend class CmdInterface;
+
+private: 
+    static long max_index;
+    vector<string> _labels;
+
+protected:
+    RecordList _records;
+
+public:
+    PhoneBook(vector<string>);
+    vector<string> fields()const { return _labels; }
+    const string field(long n)const { return _labels[n]; }
+    long recSize()const { return _labels.size(); }
+    
+    //search/add/set/remove methods
+    void addRecord(Record &);
+    ...
+
+private:
+    ListIter searchIndex(const long, ListIter);
+    ListIter searchField(const string &, const string &, ListIter);
+    
+    void refreshIndex();
+};

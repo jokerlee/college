@@ -1,0 +1,101 @@
+<!-- 自动生成Option & 简单解码 & 输入车次合法性判断 & 自动发送查询请求&文字英文化 &界面绘制 &添加颜色-->
+<!--紫色：#936cdb；>
+<html>
+<head>
+<!--meta http-equiv="content-type" content="text/html; charset=UTF-8"-->
+<title>Warp Messaging Application</title>
+<script type="text/javascript"
+        src="http://ergo.labs.ericsson.net:8080/TunnelView/loader/wheelbox-loader.js">
+</script>
+<script type="text/javascript" src="client.js"></script>
+
+ 
+</head> 
+<body bgcolor="#F0FFF0">
+
+
+<div style="margin-top:20px;margin-bottom:20px">
+  <p align="center"><font size="6" face="Arial Black" color="#008800"><b>BUPT BusOnline</b></font></p>
+</div>
+
+<div style="margin-top:20px;margin-bottom:20px" align="center">  
+<table border="0" >
+    <tr><td><b><font size="2" face="arial" color="#555555">Server Address: <input type="text" style="width: 550" id="dst" value=""/></font></b>
+    </td></tr>
+</table>
+</div>
+
+<div style="margin-top:30px;margin-bottom:20px">  
+
+<table border="0" align="center">
+      <tr align="center">
+          <td width="170"><b><font size="2" face="arial" color="#555555">Bus Route NO</font></b></td>
+          <td width="170"><b><font size="2" face="arial" color="#555555">Direction</font></b></td>
+          <td width="170"><b><font size="2" face="arial" color="#555555">Target Station</font></b></td>
+          <td width="170"><b><font size="2" face="arial" color="#555555">Num of Buses</font></b></td>
+      </tr>
+      <tr align="center">
+          <td>
+              <select name="select" id="select" style="width:150px;height:20px;margin:-2px;"onChange="send_QN();"> 
+                  <option value="s">---please select---</option> 
+                  <option value="387">387</option> 
+                  <option value="604">604</option> 
+                  <option value="645">645</option> 
+              </select>
+          </td>
+          <td>
+              <select name="direction" id="direction" style="width:150px;height:20px;margin:-2px;"> 
+                 <option value="s">---please select---</option> 
+                 <option value="0">positive direction</option> 
+                 <option value="1">negtive direction</option> 
+              </select>
+          </td>
+          <td>
+              <select name="target_station" id="target_station" style="width:150px;height:20px;margin:-2px;"> 
+                  <option value="s">--please select--</option> 
+              </select>
+          </td>
+          <td>    
+              <select name="query_quantity" id="query_quantity" style="width:150px;height:20px;margin:-2px;"> 
+                  <option value="s">--please select--</option> 
+                  <option value="1">1</option> 
+                  <option value="2">2</option> 
+                  <option value="3">3</option> 
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+      </tr>
+      <tr height="80" align="center">
+           <td colspan="4" align="center">
+               <button align="center" style="width=200" onclick="send_QE()">Submit Query</button>
+           </td>
+      </tr>
+  </table>
+
+
+
+
+<div id="dir" style="margin-left:50px;margin-bottom:20px;visibility:hidden">
+<b><font size="2" face="arial" color="#555555" align="left">Positive Direction ————></font></b>
+<!--表示车站显示-->
+<table id="station" border="0" cellspacing="2" cellpadding="5" style="font-size:.8em" >
+</table>
+<b><font size="2" face="arial" color="#555555" align="left"><————Negitive Direction</font></b>
+</div>
+
+<div id="qu_result" style="align:center;margin-left:45%;margin-bottom:10px;visibility:hidden">
+<b><font size="3" face="arial" color="#555555" align="center">Query Result:</font></b>
+</div>
+
+<!--显示查询结果-->
+<table id="query_info" border="0" align="center">
+</table>
+
+
+</body>
+</html>
+
+
+
+
+

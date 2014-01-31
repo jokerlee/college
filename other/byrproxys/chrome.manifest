@@ -1,0 +1,4 @@
+content     byrproxys chrome/content/
+skin        byrproxys classic/1.0     chrome/skin/classic/
+overlay     chrome://browser/content/browser.xul    chrome://byrproxys/content/overlay.xul
+locale	    byrproxys zh-CN chrome/locale/zh-CN/

@@ -1,0 +1,85 @@
+猜数字游戏(Guess)文档说明
+
+本游戏采用Java语言编写，程序主框架为SingleFrameApplication, 图形界面用awt/swing库编写.
+
+游戏功能
+	生成一个随机数,由玩家猜测,根据玩家所给数字与结果的关系,给出"Too Large"、“Too Small”或者“猜对了”等信息。其他功能有“显示已经猜的次数”、“重新开始游戏”和“显示正确答案”。可扩展功能有“设置数字范围”。
+
+程序结构：
+GuessApp类：主程序类。派生自org.jdesktop.application.SingleFrameApplication，负责消息捕获和传递
+	@Override protected void startup() 
+	程序图形界面初始化,生成一个GuessView类
+
+	@Override protected void configureWindow(java.awt.Window root) 
+	设置窗口的属性(Unresizable,不可改变大小)
+	
+	public static GuessApp getApplication() 
+	获得程序的handle
+
+	public static void main(String[] args)
+	启动程序的主线程
+
+GuessView类：派生自org.jdesktop.application.FrameView，负责窗口的显示，和消息处理（比如按钮和菜单的点击）。
+
+LimitedDocument类：派生自javax.swing.text.PlainDocument，用于限制JTextField控件的输入（限制为10个字符，并且只能为数字）
+	private int _maxLength  = -1;
+	Document所允许的最大长度
+	
+	private String _allowCharAsString = null;
+	Document所允许的字符集
+	
+	public void insertString( int offset, String str, AttributeSet attrSet)
+	对插入字符串进行判断(是否超过最大长度，是否在允许字符集中)，如果符合条件则执行插入
+	
+	public void setAllowChar(String str)
+	设置允许的字符集
+
+
+Game类：游戏控制类。负责一个游戏的建立、初始化，主要成员变量和方法如下：
+	private Random _rand; //随机数生成器
+	private long _count;  //记录本次游戏玩家猜测的次数
+	private long _answer; //正确答案
+	private long _max;//随机数生成的最大值 
+
+	public void newGame()
+	开始新游戏：初始化_count为0,生成一个min~max的随机数。
+	public long Guess(long num)
+	比较:返回传入参数和正确答案之间的关系,并且_count++。
+	public long getAnswer()
+	得到正确答案。
+	public long getCount()
+	得到已经猜测的次数
+	public void setRange(long min, long max)
+	设置随机数的范围
+		
+		
+图形界面用netbeans设计,以XML形式保存在.form文件中
+	GuessView.form为主界面
+	GuessAboutBox.form为About窗口的界面
+
+
+程序中用到的其他类:
+	java.util.Scanner : 用于将从JTextField中读取的字符串转换成数字
+
+软件包结构
+.
+├─build
+│   ├─classes
+│   ├─guess
+│   │   ├─ resources
+│   │   └─ busyicons
+│   └─META-INF
+│└─ services
+├─ dist
+│   └─ lib
+├─ nbproject
+│   └─ private
+├─ src
+│   ├─ guess
+│   │ └─ resources
+│   │  └─ busyicons
+│   └─ META-INF
+│  └─ services
+└─ test
+
+   

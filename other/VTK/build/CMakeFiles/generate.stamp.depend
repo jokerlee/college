@@ -1,0 +1,30 @@
+# CMake generation dependency list for this directory.
+C:/VTK/test/wxVTK/Medical/CMakeLists.txt
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeSystem.cmake
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeCCompiler.cmake
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeCXXCompiler.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/gcc.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows-cl.cmake
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeCPlatform.cmake
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeCXXPlatform.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/cl.cmake
+C:/VTK/test/wxVTK/Medical/build/CMakeFiles/CMakeRCCompiler.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindVTK.cmake
+C:/VTK/vtk-bin/VTKConfig.cmake
+C:/VTK/vtk-bin/VTKLibraryDepends.cmake
+C:/VTK/vtk-bin/UseVTK.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeImportBuildSettings.cmake
+C:/VTK/vtk-5.4.2/CMake/vtkMakeInstantiator.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindwxWidgets.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/UsewxWidgets.cmake

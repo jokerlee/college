@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+const double pi = 3.141592654;
+
+class Shape
+{
+private:
+public:
+    double area()const{}
+    ~Shape()
+    {cout << "Shape Destructor" << endl;}
+};
+
+class Rectangle: public Shape
+{
+private:
+    double width;
+    double length;
+public:
+    Rectangle( double l=0, double w=0 )
+    { cout << "Rectangle Constructor" << endl; length = l; width = w; }
+    ~Rectangle(){ cout << "Rectangle Destructor" << endl; }
+    double area()const{ return width*length; }
+};
+
+class Square: public Rectangle
+{
+private:
+    double side;
+public:
+    Square( double s=0 )
+    {  cout << "Square Constructor" << endl; side=s; }
+    ~Square(){  cout << "Square Destructor" << endl; }
+    double area()const{ return side*side; }
+};
+
+class Circle: public Shape
+{
+private:
+    double radius;
+public:
+    Circle( double r )
+    { cout << "Circle Constructor" << endl; radius = r; }
+    ~Circle(){  cout << "Circle Destructor" << endl; }
+    double area()const{ return pi*radius*radius; }
+};
+
+int main()
+{
+    double w, l;
+    
+    cout << "请输入矩形的长和宽:";
+    cin >> l >> w;
+    Rectangle r(l,w);
+    cout << "矩形的面积是:" <<  r.area() << endl;
+    
+    cout << "请输入正方形的边长:";
+    cin >> l;
+    Square s(l);
+    cout << "正方形的面积是:" << s.area() << endl;
+
+    cout << "请输入圆的半径:";
+    cin >> l;
+    Circle c(l);
+    cout << "矩形的面积是:" <<  c.area() << endl;
+    
+    system( "pause" );
+    return 0;
+
+}

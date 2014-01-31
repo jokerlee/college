@@ -1,0 +1,26 @@
+BASE_DIR = .
+BUILD_DIR = $(BASE_DIR)/build
+SRC_DIR = $(BASE_DIR)/src
+
+OBJS = $(BUILD_DIR)/book.o $(BUILD_DIR)/cmd.o $(BUILD_DIR)/main.o $(BUILD_DIR)/input.o
+
+
+CXX = g++
+CXXFLAGS = -g
+
+phone : $(OBJS)
+	$(CXX) $(OBJS) -o phone
+
+$(BUILD_DIR)/cmd.o : $(SRC_DIR)/cmd_interface.cpp $(SRC_DIR)/cmd_interface.h
+	$(CXX) $(CXXFLAGS) -c $(SRC_DIR)/cmd_interface.cpp -o $(BUILD_DIR)/cmd.o
+
+$(BUILD_DIR)/book.o : $(SRC_DIR)/book.cpp $(SRC_DIR)/book.h
+	$(CXX) $(CXXFLAGS) -c $(SRC_DIR)/book.cpp -o $(BUILD_DIR)/book.o
+
+$(BUILD_DIR)/input.o : $(SRC_DIR)/input_control.cpp $(SRC_DIR)/input_control.h
+	$(CXX) $(CXXFLAGS) -c $(SRC_DIR)/input_control.cpp -o $(BUILD_DIR)/input.o
+
+$(BUILD_DIR)/main.o : $(SRC_DIR)/main.cpp
+	$(CXX) $(CXXFLAGS) -c $(SRC_DIR)/main.cpp -o $(BUILD_DIR)/main.o
+	
+

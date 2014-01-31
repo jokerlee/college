@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CenterCtl", "CenterCtl\CenterCtl.vcproj", "{3A3B2F78-0A5D-445B-934A-3336D775FCC0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SlaveCtl", "SlaveCtl\SlaveCtl.vcproj", "{59717316-4360-4A63-AA98-71E01463161D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A3B2F78-0A5D-445B-934A-3336D775FCC0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A3B2F78-0A5D-445B-934A-3336D775FCC0}.Debug|Win32.Build.0 = Debug|Win32
+		{3A3B2F78-0A5D-445B-934A-3336D775FCC0}.Release|Win32.ActiveCfg = Release|Win32
+		{3A3B2F78-0A5D-445B-934A-3336D775FCC0}.Release|Win32.Build.0 = Release|Win32
+		{59717316-4360-4A63-AA98-71E01463161D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{59717316-4360-4A63-AA98-71E01463161D}.Debug|Win32.Build.0 = Debug|Win32
+		{59717316-4360-4A63-AA98-71E01463161D}.Release|Win32.ActiveCfg = Release|Win32
+		{59717316-4360-4A63-AA98-71E01463161D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

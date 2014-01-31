@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body bgcolor='#0668b3'>
+  <iframe name='content' src='content.html' style='width: 100%; height:90%' frameborder='0'></iframe>
+  <div id='func'>
+    <a href='javascript:void(0)' onclick='edit();'>Edit</a>
+    <a href='javascript:void(0)' onclick='save();'>Save</a>
+  </div>
+</body>
+</html>
+
+
+<script>
+  document.body.contentEditable = 'true';
+  document.designMode = 'on';
+
+  function edit() {
+    var cmd = 'cmd /c "gvim.exe e:\\dropbox\\tools\\gtd\\todolist.html"';
+    wss.Run(cmd, 0, true);
+  }
+
+  function save() {
+      document.execCommand('SaveAs', false, '%DropBox%\\tools\\gtd\\todolist.html');
+  }
+</script>
+
+<script>
+  var iframe = window.frames["content"].document;
+  iframe.body.contentEditable = 'true';
+  iframe.designMode = 'on'
+
+  var wss = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  function edit() {
+    var cmd = 'cmd /c "gvim.exe %DropBox%\\tools\\gtd\\content.html"';
+    wss.Run(cmd, 0, true);
+  }
+
+  function save() {
+    var html = window.frames["content"].document.documentElement.innerHTML;
+    html = '<html>' + html + '</html>'
+    var path = 'e:\\Dropbox\\Tools\\gtd\\content.html';
+    var f = fso.OpenTextFile(path, 2, true, -1);
+    f.Write(html);
+    f.Close();
+    alert('saved');
+  }
+</script>
+
+
+<style>
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  #func {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100px;
+    z-index: 9999;
+  }
+</style>
+
+

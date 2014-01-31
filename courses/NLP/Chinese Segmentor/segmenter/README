@@ -1,0 +1,6 @@
+# LDC Chinese segmentor
+# Installation:
+# Copy mansegment.perl and Mandarin.fre into a directory.
+# Change the first line of mansegment.perl to correct Perl path.
+# Change mansegment.perl to execuation mode.
+# Run: mansegment.perl < infile > outfile

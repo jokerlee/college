@@ -1,0 +1,33 @@
+Initializing... Please Wait...
+Initialize Finish.
+0   :Wait at Floor 1
+1   :Wait at Floor 1
+2   :Wait at Floor 1
+3   :Wait at Floor 1
+4   :Wait at Floor 1
+5   :Wait at Floor 1
+86  :Wait at Floor 1
+87  :Wait at Floor 1
+88  :Wait at Floor 1
+89  :Wait at Floor 1
+90  :Wait at Floor 1
+91  :Wait at Floor 1
+92  :Wait at Floor 1
+93  :Wait at Floor 1
+Initializing... Please Wait...
+Initialize Finish.
+0   :Wait at Floor 1
+1   :Wait at Floor 1
+2   :Wait at Floor 1
+3   :Wait at Floor 1
+Initializing... Please Wait...
+Initialize Finish.
+0   :Wait at Floor 1
+1   :Wait at Floor 1
+2   :Wait at Floor 1
+3   :Wait at Floor 1
+9   :Wait at Floor 2
+10  :Wait at Floor 2
+11  :Wait at Floor 2
+12  :Wait at Floor 2
+13  :Wait at Floor 2

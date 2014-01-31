@@ -1,0 +1,20 @@
+./selective -a 
+=========================================================================
+                          Station A                                 
+-------------------------------------------------------------------------
+Protocol.lib, version 3.0, Build: Oct 19 2009 (jiangy@public3.bta.net.cn)
+Channel: 8000 bps, 270 ms propagation delay, bit error rate 1.0E-05
+Log file "./selective-A.log", TCP port 59144, debug mask 0x00
+Station A is waiting for station B on TCP port 59144 ... Done.
+New epoch: Sun Nov 22 22:19:45 2009
+=========================================================================
+Designed by Jiang Yanjun, build: Oct 19 2009  22:45:01
+3.430 .... 8 packets received, 7736 bps, 96.69%, Err 0 (0.0e+00)
+5.549 .... 16 packets received, 7734 bps, 96.67%, Err 1 (2.8e-05)
+7.671 .... 24 packets received, 7730 bps, 96.62%, Err 1 (1.9e-05)
+9.778 .... 32 packets received, 7741 bps, 96.76%, Err 1 (1.4e-05)
+11.881 .... 40 packets received, 7751 bps, 96.89%, Err 1 (1.2e-05)
+14.003 .... 48 packets received, 7746 bps, 96.82%, Err 1 (9.6e-06)
+16.110 .... 56 packets received, 7750 bps, 96.88%, Err 1 (8.3e-06)
+18.227 .... 64 packets received, 7749 bps, 96.86%, Err 1 (7.3e-06)
+19.523 TCP Disconnected.

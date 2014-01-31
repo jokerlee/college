@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><umlet_diagram><help_text>// Uncomment the following line to change the fontsize:
+// fontsize=14
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on UML elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use ± or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text><zoom_level>10</zoom_level><element><type>com.umlet.element.base.Class</type><coordinates><x>44</x><y>450</y><w>290</w><h>170</h></coordinates><panel_attributes>Segmentor
+--
+methods:
++ DocumentToSentence() : void
++ SentenceToWord() : void
+--
+members:
+- _dict : Dictionary
+- _stops map&lt;wchar_t, int&gt;
+- _is : wistream &amp;
+- _os : wostream &amp;
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>44</x><y>50</y><w>290</w><h>210</h></coordinates><panel_attributes>Dictionary
+--
+methods:
++ LoadDictionary() : void
++ isNumeric() : bool
++ isEnglish : bool
++ isDate() : bool
++ freq() : double
++ operator[]() : bool
+--
+members:
+- _dict : hash_map&lt;wstring, float&gt;
+- _specia : map&lt;wchar_t, int&gt;
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>44</x><y>290</y><w>290</w><h>140</h></coordinates><panel_attributes>Normalizer
+--
+methods:
++ process() : void
+--
+members:
+- _ nrmltbl : map&lt;wchar_t, wchar_t&gt;
+- _is : wistream &amp;
+- _os : wostream &amp;
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>454</x><y>80</y><w>210</w><h>70</h></coordinates><panel_attributes>_nrm: Normalizer_
+--
+_is = wcin
+_os = tmpout</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>454</x><y>360</y><w>210</w><h>130</h></coordinates><panel_attributes>_seg: Segmentor_
+--
+_is = tmpin
+_os = wcout</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Class</type><coordinates><x>474</x><y>430</y><w>140</w><h>50</h></coordinates><panel_attributes>_dict: Dictionary_
+--
+</panel_attributes><additional_attributes/></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>314</x><y>80</y><w>180</w><h>240</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>20;220;96;220;96;10;140;10</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>284</x><y>40</y><w>202</w><h>420</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>46;20;86;20;86;400;186;400</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>314</x><y>360</y><w>180</w><h>120</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>20;100;96;100;96;10;136;10</additional_attributes></element></umlet_diagram>
